@@ -1,0 +1,57 @@
+{
+  "name": "RC",
+  "version": "1.0.0",
+  "description": "Starter Kit for React and Redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p start:server lint:watch",
+    "dev": "webpack -wd",
+    "start:server": "nodemon --exec babel-node ./tools/server.js --ignore public",
+    "lint": "esw src",
+    "lint:watch": "npm run lint -- --watch"
+  },
+  "author": "RC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Always-Sunny/Ruby.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.7.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-watch": "^3.1.2",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.0",
+    "npm-run-all": "^4.1.1",
+    "prop-types": "^15.5.10",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "redux-immutable-state-invariant": "^2.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.19.1"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
