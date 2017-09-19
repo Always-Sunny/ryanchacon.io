@@ -1,2 +1,2 @@
 # the-daily-vibe
-Personal Project: Building a music app with React/Redux
+Personal music blog built with react, node, and redux. 
