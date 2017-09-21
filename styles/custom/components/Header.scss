@@ -1,8 +1,46 @@
-.header-container {
-    height: 70px;
-    background-color: grey;
+.Header {
+  @media screen and (min-width: 992px) {
+    height: 72px;
+  }
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100vw;
+  height: 60px;
+  background-color: #272727;
 
-    h1 {
-        color: white;
+  .Header-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+  }
+  .header-title {
+    position: relative;
+    color: white;
+    margin-left: 40px;
+
+    .header-title-navlink {
+      color: white;
+      text-decoration: none;
     }
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    max-width: 150px;
+    margin-right: 40px;
+
+    .header-nav-navlink {
+      color: white;
+      text-decoration: none;
+    }
+    .header-nav-navlink-selected {
+      color: yellow;
+    }
+
+  }
 }
