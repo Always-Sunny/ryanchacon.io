@@ -1,0 +1,19 @@
+.Filter-Bar {
+  @media screen and (min-width: 992px) {
+    height: 40px;
+  }
+  height: 30px;
+
+  .Filter-Bar-Container {
+    height: 100%;
+    box-shadow: 0px 2px 4px #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter-bar-text {
+    margin-top: 3px;
+  }
+
+}

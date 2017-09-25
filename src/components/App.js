@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <div className="main">
+        <div className="Main">
           {this.props.routes}
         </div>
       </div>
