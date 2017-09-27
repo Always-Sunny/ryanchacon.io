@@ -1,2 +1,2 @@
 # the-daily-vibe
-Music application built with react and redux
+Personal music and media blog built with react and redux

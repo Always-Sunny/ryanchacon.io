@@ -15,7 +15,6 @@
     justify-content: space-between;
     position: relative;
     height: 100%;
-    // box-shadow: 2px 2px 4px #888888;
     box-shadow: 0 0 12px 0 rgba(0,0,0,.07);
   }
 
@@ -23,22 +22,33 @@
     color: white;
     margin-left: 40px;
     width: 163px;
-    margin-bottom: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
     .header-title-text {
+      display: flex;
       color: black;
       font-family: numino;
       font-weight: lighter;
       font-size: 19px;
       letter-spacing: 2px;
       text-transform: uppercase;
-
     }
 
     .header-title-navlink {
       text-decoration: none;
     }
+
+    .header-logo-img {
+      max-height: 40px;
+      margin-right: 7px;
+
+    }
+
   }
+
+
 
   .header-nav {
     display: flex;
