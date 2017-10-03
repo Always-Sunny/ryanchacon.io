@@ -17,26 +17,26 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-   rules: [
-     {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader']},
+    rules: [
+      {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader']},
 
-     {
-       test: /\.scss$/,
-       use: [
-         { loader: "style-loader" },// creates style nodes from JS strings
-         { loader: "css-loader" }, // translates CSS into CommonJS
-         { loader: "sass-loader"} // compiles Sass to CSS
-       ]
-     },
-     {
-       test: /\.(png|jpg|gif)$/,
-       use: [
-         {
-           loader: 'file-loader',
-           options: {}
-         }
-       ]
-     }
-   ]
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: "style-loader" },// creates style nodes from JS strings
+          { loader: "css-loader" }, // translates CSS into CommonJS
+          { loader: "sass-loader"} // compiles Sass to CSS
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      }
+    ]
   }
 };
