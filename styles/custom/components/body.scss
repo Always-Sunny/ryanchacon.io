@@ -1,9 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
+//general styling 
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir;
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.App {
+  height: 100%;
+}
 
-    body {
-      font-family: Avenir;
-      position: relative;
-  }
+h1 {
+  margin: 0px;
+  padding: 0px;
 }

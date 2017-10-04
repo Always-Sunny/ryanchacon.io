@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import headerLogo from '../../public/assets/images/ico.jpg';
+// import headerLogo from '../../public/assets/images/ico.jpg';
+// <img className="header-logo-img" src={headerLogo} alt={'alt'}/>
+
 
 const Header = () => (
   <div className="Header">
     <div className="Header-Container">
 
       <div className="header-title">
-        <img className="header-logo-img" src={headerLogo} alt={'alt'}/>
-        <h1><NavLink to="/" className="header-title-navlink header-title-text">TheDailyVibe</NavLink></h1>
+        <h1><NavLink to="/" className="header-title-navlink header-title-text">ryanchacon</NavLink></h1>
       </div>
 
       <nav className="header-nav">

@@ -14,6 +14,19 @@ const compiler = webpack(webpackConfig);
 const server = express();
 const context = {};
 
+//fix for webpack-loop-rebundling
+//delete when webpack is fixed
+//https://github.com/webpack/watchpack/issues/25
+const timefix = 11000;
+compiler.plugin('watch-run', (watching, callback) => {
+ watching.startTime += timefix;
+ callback()
+});
+compiler.plugin('done', (stats) => {
+ stats.startTime -= timefix
+})
+//
+
 server.use(webpackDevMiddleware(compiler, {
   noInfo: true, publicPath: webpackConfig.output.publicPath,
 }));

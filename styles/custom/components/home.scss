@@ -1,0 +1,31 @@
+.Home {
+  text-align: center;
+  height: 100%;
+
+  .home-title {
+
+    .home-title-text {
+      color: black;
+      font-family: $italiano;
+      font-size: 100px;
+      font-weight: 400;
+      text-transform: lowercase;
+
+
+      .Typist .Cursor {
+        display: inline-block; }
+        .Typist .Cursor--blinking {
+          opacity: 0;
+          animation: blink 1s linear infinite; }
+
+          @keyframes blink {
+            0% {
+              opacity: 1; }
+              50% {
+                opacity: 0; }
+                100% {
+                  opacity: 1; } }
+
+                }
+              }
+            }
