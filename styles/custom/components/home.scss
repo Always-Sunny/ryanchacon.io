@@ -3,12 +3,10 @@
 
   .heading {
     position: absolute;
-    top: 50%;
+    top: 53%;
     margin-top: -150px;
     text-align: center;
     width: 100%;
-
-
 
     .intro {
       color: black;
@@ -16,9 +14,22 @@
       font-size: 80px;
       font-weight: 400;
       text-transform: none;
-
-
     }
+
+    .tagline {
+      font-size: 16px;
+      animation: 5s fadeIn ;
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+
 
 
   }
