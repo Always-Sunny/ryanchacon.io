@@ -1,38 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Typist from 'react-typist';
+import Typed from 'typed.js';
 
-function Home () {
+class Home extends React.Component {
+  componentDidMount() {
+    // You can pass other options here, such as typing speed, back speed, etc.
+    const options = {
+      strings: ["ryanchacon.io","Ryan Andrew Chacon","RAC"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      smartBackspace: true,
+      showCursor: false
+      // onComplete: (self) => {}
+    };
+    // this.el refers to the <span> in the render() method
+    this.typed = new Typed(this.el, options);
+  }
 
-  return(
-    <div className="Home">
-      <div className={"home-title"}>
-        <h1 className="home-title-text">
-          <Typist cursor={{ hideWhenDone: true }}>
-            ryanchacon.io
-          </Typist>
-        </h1>
+  componentWillUnmount() {
+    // Make sure to destroy Typed instance on unmounting
+    // to prevent memory leaks
+    this.typed.destroy();
+  }
 
+  render() {
+    return (
+      <div className="Home">
+        <div className="heading">
+          <span
+            className="intro"
+            style={{ whiteSpace: 'pre' }}
+            ref={(el) => { this.el = el; }}
+            />
+        </div>
       </div>
-
-    </div>
-  )
-};
-
+    );
+  }
+}
 
 
-// class Home extends React.Component {
-//   state = {typing: true}
-//   done = () => {
-//     this.setState({ typing: false }, () => {
-//       setTimeout(() => this.setState({ typing: true }), this.props.timeout || 1200);
-//     });
-//   }
-//   render() {
-//     return this.state.typing ?
-//       <Typist onTypingDone={this.done}>ryanchacon</Typist>
-//       : <span>ryanchacon</span>;
-//   }
-// }
+
+
+
+
+
+
 
 export default Home;
