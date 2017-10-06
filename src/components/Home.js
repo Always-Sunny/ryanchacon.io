@@ -1,5 +1,8 @@
 import React from 'react';
 import Typed from 'typed.js';
+import Header from './Header';
+
+// {fadeIn !== null && <Header/>}
 
 class Home extends React.Component {
   constructor(props) {
@@ -35,8 +38,9 @@ class Home extends React.Component {
     if (isCompleted) {
       fadeIn = <div className="tagline">Built With NodeJS and React</div>;
     }
-
     return (
+
+
       <div className="Home">
         <div className="heading">
           <span

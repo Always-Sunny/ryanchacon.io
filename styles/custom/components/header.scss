@@ -9,55 +9,35 @@
   height: 60px;
   background-color: white;
 
+
+  animation: Header 6s ease-in;
+
+  @keyframes Header {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
   .Header-Container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+    justify-content: flex-end;
     height: 100%;
-    box-shadow: 0 0 12px 0 rgba(0,0,0,.07);
   }
-
-  .header-title {
-    color: white;
-    margin-left: 40px;
-    width: 163px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-    .header-title-text {
-      display: flex;
-      color: black;
-      font-family: numino;
-      font-weight: lighter;
-      font-size: 19px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .header-title-navlink {
-      text-decoration: none;
-    }
-
-    .header-logo-img {
-      max-height: 40px;
-      margin-right: 7px;
-
-    }
-  }
-
-
 
   .header-nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 50vw;
-    max-width: 300px;
+    width: 100%;
+    max-width: 350px;
     font-family: $raleway;
     font-size: 14px;
     letter-spacing: 1px;
+    margin-right: 50px;
 
     .header-nav-navlink {
       color: grey;
@@ -71,21 +51,4 @@
 
   }
 
-  .header-nav-profile {
-    display: flex;
-    width: 163px;
-    margin-right: 40px;
-    justify-content: flex-end;
-    font-family: $nunito;
-    font-size: 15px;
-
-    .header-nav-profile-navlink {
-      color: grey;
-      text-decoration: none;
-    }
-    .header-nav-profile-navlink-selected {
-      color: black;
-      text-decoration: bold;
-    }
-  }
 }
