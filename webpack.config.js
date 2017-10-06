@@ -20,7 +20,6 @@ module.exports = {
     new ExtractTextPlugin('style.css')
   ],
   module: {
-<<<<<<< HEAD
    rules: [
      {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader']},
      {
@@ -40,28 +39,5 @@ module.exports = {
        ]
      }
    ]
-=======
-    rules: [
-      {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader']},
-
-      {
-        test: /\.scss$/,
-        use: [
-          { loader: "style-loader" },// creates style nodes from JS strings
-          { loader: "css-loader" }, // translates CSS into CommonJS
-          { loader: "sass-loader"} // compiles Sass to CSS
-        ]
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
-      }
-    ]
->>>>>>> 65fb4f5bf656bd345876bae89775e6c584585d02
   }
 };
