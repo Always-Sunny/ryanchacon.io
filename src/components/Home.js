@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 
 class Home extends React.Component {
@@ -11,13 +10,13 @@ class Home extends React.Component {
   }
   componentDidMount() {
     const options = {
-      strings: ["ryanchacon.io","Ryan Andrew Chacon","RAC"],
+      strings: ['ryanchacon.io', 'Ryan Andrew Chacon', 'RAC'],
       // strings: ["rac"],
       typeSpeed: 50,
       backSpeed: 40,
       smartBackspace: true,
       showCursor: false,
-      onComplete: (self) => {console.log(this.state),this.setState({onComplete: true}), console.log(this.state)}
+      onComplete: () => { console.log(this.state), this.setState({ onComplete: true }), console.log(this.state); },
     };
     // this.el refers to the <span> in the render() method
     this.typed = new Typed(this.el, options);
@@ -34,7 +33,7 @@ class Home extends React.Component {
     const isCompleted = this.state.onComplete;
     let fadeIn = null;
     if (isCompleted) {
-       fadeIn = <div className="tagline">Built With NodeJS and React</div>
+      fadeIn = <div className="tagline">Built With NodeJS and React</div>;
     }
 
     return (
@@ -44,20 +43,13 @@ class Home extends React.Component {
             className="intro"
             style={{ whiteSpace: 'pre' }}
             ref={(el) => { this.el = el; }}
-            />
+          />
           {fadeIn}
         </div>
       </div>
     );
   }
 }
-
-
-
-
-
-
-
 
 
 export default Home;

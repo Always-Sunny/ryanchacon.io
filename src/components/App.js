@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        
+
         <div className="Main">
           {this.props.routes}
         </div>
@@ -19,7 +19,7 @@ class App extends React.Component {
 
 // figure out how to use PropTypes.shapes
 App.propTypes = {
-  routes: PropTypes.object.isRequired,
+  routes: PropTypes.shape({}).isRequired,
 };
 
 export default App;

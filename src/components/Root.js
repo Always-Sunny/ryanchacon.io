@@ -18,7 +18,7 @@ Root.propTypes = {
     PropTypes.func.isRequired,
     PropTypes.object.isRequired,
   ]).isRequired,
-  routes: PropTypes.func.isRequired,
+  routes: PropTypes.shape({}).isRequired,
 };
 
 
