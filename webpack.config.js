@@ -29,23 +29,6 @@ module.exports = {
         use: ['css-loader', 'sass-loader']
       })),
     },
-    //  {
-    //     test: /\.scss$/,
-    //     use: ExtractTextPlugin.extract({
-    //       fallback: 'style-loader',
-    //       //resolve-url-loader may be chained before sass-loader if necessary
-    //       use: ['css-loader', 'sass-loader']
-    //     })
-    //   },
-
-    //  {
-    //    test: /\.scss$/,
-    //    use: [
-    //      { loader: "style-loader" },// creates style nodes from JS strings
-    //      { loader: "css-loader" }, // translates CSS into CommonJS
-    //      { loader: "sass-loader"} // compiles Sass to CSS
-    //    ]
-    //  },
      {
        test: /\.(png|jpg|gif)$/,
        use: [

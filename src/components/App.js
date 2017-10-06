@@ -16,7 +16,6 @@ class App extends React.Component {
   }
 }
 
-// figure out how to use PropTypes.shapes
 App.propTypes = {
   routes: PropTypes.shape({}).isRequired,
 };

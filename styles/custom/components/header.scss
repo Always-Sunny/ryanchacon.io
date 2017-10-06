@@ -8,8 +8,6 @@
   width: 100vw;
   height: 60px;
   background-color: white;
-
-
   animation: Header 6s ease-in;
 
   @keyframes Header {
@@ -20,7 +18,6 @@
       opacity: 1;
     }
   }
-
 
   .Header-Container {
     display: flex;
@@ -48,7 +45,5 @@
       font-size: 15px;
       font-weight: bold;
     }
-
   }
-
 }
