@@ -7,6 +7,13 @@ const Header = () => (
   <div className="Header">
     <div className="Header-Container">
 
+<<<<<<< HEAD
+=======
+      <div className="header-title">
+        <h1><NavLink to="/" className="header-title-navlink header-title-text">ryanchacon</NavLink></h1>
+      </div>
+
+>>>>>>> 65fb4f5bf656bd345876bae89775e6c584585d02
       <nav className="header-nav">
         <NavLink to="/about" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">About</NavLink>
         <NavLink to="/education" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Education</NavLink>
