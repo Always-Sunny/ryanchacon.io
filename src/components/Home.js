@@ -2,8 +2,6 @@ import React from 'react';
 import Typed from 'typed.js';
 import Header from './Header';
 
-// {fadeIn !== null && <Header/>}
-
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -31,29 +29,26 @@ class Home extends React.Component {
     this.typed.destroy();
   }
 
-
   render() {
     const isCompleted = this.state.onComplete;
     let fadeIn = null;
     if (isCompleted) {
       fadeIn = <div className="tagline">Built With NodeJS and React</div>;
-    }
-    return (
-
-
-      <div className="Home">
-        <div className="heading">
-          <span
-            className="intro"
-            style={{ whiteSpace: 'pre' }}
-            ref={(el) => { this.el = el; }}
-          />
-          {fadeIn}
+      }
+      return (
+        <div className="Home">
+          <div className="heading">
+            <span
+              className="intro"
+              style={{ whiteSpace: 'pre' }}
+              ref={(el) => { this.el = el; }}
+              />
+            {fadeIn}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
-}
 
 
-export default Home;
+  export default Home;

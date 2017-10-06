@@ -20,24 +20,24 @@ module.exports = {
     new ExtractTextPlugin('style.css')
   ],
   module: {
-   rules: [
-     {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader']},
-     {
-      test: /\.scss$/,
-      use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: ['css-loader', 'sass-loader']
-      })),
-    },
-     {
-       test: /\.(png|jpg|gif)$/,
-       use: [
-         {
-           loader: 'file-loader',
-           options: {}
-         }
-       ]
-     }
-   ]
+    rules: [
+      {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader']},
+      {
+        test: /\.scss$/,
+        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })),
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      }
+    ]
   }
 };
