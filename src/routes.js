@@ -9,7 +9,8 @@ export default (
     <Route exact path="/" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/education" component={Home} />
-    <Route path="/hobbies" component={Home} />
-    <Route path="/interests" component={Home} />
+    <Route path="/works" component={Home} />
+    <Route path="/blog" component={Home} />
+
   </Switch>
 );

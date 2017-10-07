@@ -7,6 +7,9 @@
     margin-top: -150px;
     text-align: center;
     width: 100%;
+    @include mobile {
+      width: 100%;
+    }
 
     .intro {
       color: black;
@@ -14,12 +17,20 @@
       font-size: 80px;
       font-weight: 400;
       text-transform: none;
+      white-space: pre;
+
+      @include mobile {
+        font-size: 50px;
+        white-space: normal;
+      }
     }
 
     .tagline {
       font-size: 16px;
       animation: 5s fadeIn ;
-
+      @include mobile {
+        font-size: 12px;
+      }
       @keyframes fadeIn {
         from {
           opacity: 0;

@@ -1,19 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import headerLogo from '../../public/assets/images/ico.jpg';
-// <img className="header-logo-img" src={headerLogo} alt={'alt'}/>
+// import img from '../../public/assets/images/sweetPhoto.jpg';
+// <div className="header-img"><img className="img" src={img} alt={'alt'}/></div>
+//
 
 const Header = () => (
   <div className="Header">
     <div className="Header-Container">
 
-      <nav className="header-nav">
-        <NavLink to="/about" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">About</NavLink>
-        <NavLink to="/education" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Education</NavLink>
-        <NavLink to="/hobbies" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Hobbies</NavLink>
-        <NavLink to="/interests" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Interests</NavLink>
-      </nav>
-
+        <nav className="header-nav">
+          <NavLink to="/about" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">About</NavLink>
+          <NavLink to="/education" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Education</NavLink>
+          <NavLink to="/works" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Works</NavLink>
+          <NavLink to="/blog" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Blog</NavLink>
+        </nav>
     </div>
   </div>
 //

@@ -1,8 +1,15 @@
 $mobileWidth: 320px;
-$tabletWidth: 736px;
+$tabletWidth: 768px;
+$laptopWidth: 1024px;
 
 @mixin mobile {
   @media  only screen and (min-width: #{$mobileWidth}) and (max-width: #{$tabletWidth - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media  only screen and (min-width: #{$tabletWidth}) and (max-width: #{$laptopWidth - 1px}) {
     @content;
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Typed from 'typed.js';
 import Header from './Header';
-
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -12,13 +11,14 @@ class Home extends React.Component {
   componentDidMount() {
     const options = {
       strings: ['ryanchacon.io', 'Ryan Andrew Chacon', 'RAC'],
-      // strings: ["rac"],
+      // strings: ["Ryan Andrew Chacon"],
       typeSpeed: 50,
       backSpeed: 40,
       smartBackspace: true,
       showCursor: false,
       onComplete: () => { console.log(this.state), this.setState({ onComplete: true }), console.log(this.state); },
     };
+
     // this.el refers to the <span> in the render() method
     this.typed = new Typed(this.el, options);
   }
@@ -40,7 +40,6 @@ class Home extends React.Component {
           <div className="heading">
             <span
               className="intro"
-              style={{ whiteSpace: 'pre' }}
               ref={(el) => { this.el = el; }}
               />
             {fadeIn}
