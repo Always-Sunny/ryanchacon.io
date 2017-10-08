@@ -9,6 +9,7 @@ import webpackConfig from '../webpack.config';
 import App from '../src/components/App';
 import config from './config';
 import routes from '../src/routes';
+import path from 'path';
 
 const compiler = webpack(webpackConfig);
 const server = express();
@@ -32,9 +33,8 @@ server.use(webpackDevMiddleware(compiler, {
 }));
 server.use(webpackHotMiddleware(compiler));
 
-
 server.set('view engine', 'ejs');
-server.use(express.static('public'));
+server.use(express.static(__dirname + '/../public'));
 
 server.get('*', (req, res) => {
   res.render('index', {
