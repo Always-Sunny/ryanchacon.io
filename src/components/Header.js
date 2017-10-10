@@ -8,6 +8,8 @@ const Header = () => (
   <div className="Header">
     <div className="Header-Container">
 
+        <div className="header-menu-icon"><img className="menu-icon" src='/images/menu-icon.png' alt='menu'/> </div>
+
         <nav className="header-nav">
           <NavLink to="/about" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">About</NavLink>
           <NavLink to="/education" className="header-nav-navlink" activeClassName="header-nav-navlink-selected">Education</NavLink>

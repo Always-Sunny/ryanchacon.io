@@ -1,0 +1,14 @@
+.About {
+  height: 100%;
+
+  .About-Container {
+
+    .about-header {
+      display: flex;
+      align-items: center;
+      img {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

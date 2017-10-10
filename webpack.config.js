@@ -4,9 +4,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: [
-    'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
+    './src/index.js',
     'react-hot-loader/patch', // RHL patch
-    './src/index.js'
+    'webpack-hot-middleware/client?reload=true' //note that it reloads the page if hot module reloading fails.
   ],
   output: {
     path: __dirname + '/public',
@@ -14,14 +14,14 @@ module.exports = {
     filename: 'bundle.js'
   },
   target: 'web',
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin('style.css')
   ],
   module: {
     rules: [
-      {test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel-loader']},
+      {test: /\.jsx?$/, exclude: /node_modules/, use: ['babel-loader']},
       {
         test: /\.scss$/,
         use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
@@ -30,11 +30,13 @@ module.exports = {
         })),
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(jpe?g|png|gif|ico)$/i,
         use: [
           {
             loader: 'file-loader',
-            options: {}
+            options: {
+              name: '[name].[ext]'
+            }
           }
         ]
       }
