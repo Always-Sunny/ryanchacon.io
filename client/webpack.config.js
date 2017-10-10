@@ -6,10 +6,10 @@ module.exports = {
   entry: [
     'react-hot-loader/patch', // RHL patch
     'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
-    './src/index.js'
+    './client/src/index.js'
   ],
   output: {
-    path: __dirname + '/public',
+    path: __dirname + 'dist',
     publicPath: "/",
     filename: 'bundle.js'
   },

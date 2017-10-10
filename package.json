@@ -4,11 +4,11 @@
   "description": "personal website",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ./tools/server.js",
+    "start": "babel-node ./server/server.js",
     "dev": "webpack -wd",
-    "start:server": "nodemon --exec babel-node ./tools/server.js",
-    "lint": "eslint src",
-    "lint:watch": "esw src --watch"
+    "start:server": "nodemon --exec babel-node ./server/server.js",
+    "lint": "eslint client/src",
+    "lint:watch": "esw client/src --watch"
   },
   "author": "RC",
   "repository": {
@@ -16,6 +16,10 @@
     "url": "git://github.com/Always-Sunny/ryanchacon.io.git"
   },
   "license": "ISC",
+  "babel": {
+    "plugins": [ "react-hot-loader/babel" ],
+    "presets": ["env", "react","stage-2" ]
+ },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
