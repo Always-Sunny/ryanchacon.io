@@ -35,7 +35,7 @@ server.use(webpackHotMiddleware(compiler));
 
 server.set('view engine', 'ejs');
 server.set('views', path.join(`${__dirname}/../client/views`));
-server.use(express.static(`${__dirname}/../dist`));
+server.use(express.static(`${__dirname}/../public`));
 
 
 server.get('*', (req, res) => {
