@@ -4,9 +4,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: [
-    './src/index.js',
     'react-hot-loader/patch', // RHL patch
-    'webpack-hot-middleware/client?reload=true' //note that it reloads the page if hot module reloading fails.
+    'webpack-hot-middleware/client?reload=true', //note that it reloads the page if hot module reloading fails.
+    './src/index.js'
   ],
   output: {
     path: __dirname + '/public',

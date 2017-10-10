@@ -8,7 +8,7 @@ import '../styles/main.scss';
 
 const store = configureStore();
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <AppContainer>
     <Root store={store} routes={routes} />
   </AppContainer>,
@@ -20,7 +20,7 @@ if (module.hot) {
   module.hot.accept('./components/Root', () => {
     // const NextRoot = require('./components/Root').default;
     const NextRoot = Root.default;
-    ReactDOM.render(
+    ReactDOM.hydrate(
       <AppContainer>
         <NextRoot store={store} routes={routes} />
       </AppContainer>,
