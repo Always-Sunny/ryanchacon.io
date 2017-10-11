@@ -6,7 +6,7 @@ const About = () => (
 
       <div className="about-header">
         <h1 className='name'>Ryan Andrew Chacon</h1>
-        <img style={imgStyle} src='/images/lex_braniac_gold.jpg'/>
+        <img style={imgStyle} src='/gifs/anti-life-equation.gif'/>
       </div>
 
       <p className="p1">Self-taught college programmer majoring in philosophy. I love lions, tigers, and bears; oh my.</p>
