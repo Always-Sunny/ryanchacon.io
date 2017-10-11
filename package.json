@@ -6,7 +6,8 @@
   "scripts": {
     "start": "babel-node ./server/server.js",
     "dev": "webpack -wd",
-    "start:server": "nodemon --exec babel-node ./server/server.js",
+    "ss": "nodemon --exec babel-node ./server/server.js",
+    "dev": "webpack -wd --config ./client/webpack.config.js",
     "lint": "eslint client/src",
     "lint:watch": "esw client/src --watch"
   },

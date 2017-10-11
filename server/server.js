@@ -48,11 +48,11 @@ server.get('*', (req, res) => {
   });
 });
 
-server.get('*', (req, res) => {
-  res.render('index', {
-    content: 'hello',
-  });
-});
+// server.get('*', (req, res) => {
+//   res.render('index', {
+//     content: 'hello',
+//   });
+// });
 
 
 server.listen(config.port, () => {

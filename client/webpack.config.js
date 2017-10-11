@@ -9,7 +9,7 @@ module.exports = {
     './client/src/index.js'
   ],
   output: {
-    path: __dirname + 'public',
+    path: `${__dirname}/../public`,
     publicPath: "/",
     filename: 'bundle.js'
   },
@@ -21,7 +21,16 @@ module.exports = {
   ],
   module: {
     rules: [
-      {test: /\.jsx?$/, exclude: /node_modules/, use: ['babel-loader']},
+      {
+         test: /\.js$/,
+         exclude: /(node_modules|bower_components)/,
+         use: {
+           loader: 'babel-loader',
+           options: {
+             presets: ['env']
+           }
+         }
+       },
       {
         test: /\.scss$/,
         use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
@@ -35,7 +44,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]'
+              // name: '[name].[ext]'
             }
           }
         ]

@@ -6,10 +6,12 @@ const About = () => (
 
       <div className="about-header">
         <h1 className='name'>Ryan Andrew Chacon</h1>
-        <img style={imgStyle} src='/gifs/anti-life-equation.gif'/>
+        <img style={imgStyle} src='/images/tom.jpg'/>
+
       </div>
 
       <p className="p1">Self-taught college programmer majoring in philosophy. I love lions, tigers, and bears; oh my.</p>
+      <p>test</p>
 
     </div>
   </div>
