@@ -4,10 +4,9 @@
   "description": "personal website",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ./server/server.js",
-    "dev": "webpack -wd",
-    "ss": "nodemon --exec babel-node ./server/server.js",
+    "start": "nodemon --exec babel-node ./server/server.js --ignore client/",
     "dev": "webpack -wd --config ./client/webpack.config.js",
+    "ss": "babel-node ./server/server.js",
     "lint": "eslint client/src",
     "lint:watch": "esw client/src --watch"
   },
@@ -18,9 +17,15 @@
   },
   "license": "ISC",
   "babel": {
-    "plugins": [ "react-hot-loader/babel" ],
-    "presets": ["env", "react","stage-2" ]
- },
+    "plugins": [
+      "react-hot-loader/babel"
+    ],
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -44,7 +49,7 @@
     "nodemon": "^1.12.0",
     "npm-run-all": "^4.1.1",
     "prop-types": "^15.5.10",
-    "react-hot-loader": "^3.0.0-beta.7",
+    "react-hot-loader": "^3.0.0",
     "redux-immutable-state-invariant": "^2.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
