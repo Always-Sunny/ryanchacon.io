@@ -5,7 +5,7 @@ const About = () => (
     <div className="About-Container">
 
       <div className="about-header">
-        <h1 className='name'>Ryan Andrew Chacon</h1>
+        <h1 className='name'>Ryan Chacon</h1>
         <img style={imgStyle} src='/images/tom.jpg'/>
         <img src='gifs/source-wall.gif'/>
       </div>

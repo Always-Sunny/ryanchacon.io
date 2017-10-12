@@ -10,10 +10,10 @@ class Home extends React.Component {
   }
   componentDidMount() {
     const options = {
-      strings: ['ryanchacon.io', 'Ryan Andrew Chacon', 'RAC'],
+      strings: ['Ryan Andrew Chacon', 'RAC'],
       // strings: ["Ryan Andrew Chacon"],
       typeSpeed: 50,
-      backSpeed: 40,
+      backSpeed: 50,
       smartBackspace: true,
       showCursor: false,
       onComplete: () => { console.log(this.state), this.setState({ onComplete: true }), console.log(this.state); },

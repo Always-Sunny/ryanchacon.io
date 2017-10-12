@@ -14,15 +14,16 @@
     .intro {
       color: black;
       font-family: $italiano;
-      font-size: 80px;
+      font-size: 100px;
       font-weight: 400;
       text-transform: none;
       white-space: pre;
 
       @include mobile {
-        font-size: 50px;
+        font-size: 80px;
         white-space: normal;
       }
+
     }
 
     .tagline {
