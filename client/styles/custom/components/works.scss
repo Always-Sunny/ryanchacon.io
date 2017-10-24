@@ -1,0 +1,15 @@
+.Works {
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+
+  .Works-Container {
+    overflow: auto;
+    background-image: url();
+
+    .imgStyle {
+      width: 100%;
+      margin-top: -100px;
+    }
+  }
+}

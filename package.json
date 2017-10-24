@@ -16,16 +16,6 @@
     "url": "git://github.com/Always-Sunny/ryanchacon.io.git"
   },
   "license": "ISC",
-  "babel": {
-    "plugins": [
-      "react-hot-loader/babel"
-    ],
-    "presets": [
-      "env",
-      "react",
-      "stage-2"
-    ]
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",

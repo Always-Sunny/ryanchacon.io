@@ -1,14 +1,51 @@
 .About {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+
 
   .About-Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
 
-    .about-header {
-      display: flex;
-      align-items: center;
-      img {
-        justify-content: flex-end;
+    .about-content {
+        width: 50%;
+        border-right: 1px grey thin;
+        height: 100%;
+
+      .about-content-container {
+        text-align: center;
+
+        h1 {
+          color: indigo;
+        }
+     }
+    }
+    //special except on -container use
+    .about-form-container {
+      width: 50%;
+      border-left: 1px grey solid;
+      text-align: center;
+      .about-form {
+        display: inline-grid;
+
+        .about-label {
+
+          .about-textarea {
+
+
+          }
+        }
+
+        input[type=submit] {
+          color: indigo;
+        }
       }
     }
+
+
+
+
   }
 }

@@ -1,5 +1,4 @@
 .Header {
-
   position: fixed;
   top: 0;
   display: block;
@@ -51,7 +50,7 @@
       width: 100%;
       max-width: 300px;
       font-family: $raleway;
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 1px;
       margin-right: 50px;
 
@@ -70,7 +69,7 @@
       }
       .header-nav-navlink-selected {
         color: black;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
       }
     }

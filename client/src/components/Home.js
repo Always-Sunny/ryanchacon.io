@@ -1,6 +1,7 @@
 import React from 'react';
 import Typed from 'typed.js';
 import Header from './Header';
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -10,7 +11,7 @@ class Home extends React.Component {
   }
   componentDidMount() {
     const options = {
-      strings: ['Ryan Andrew Chacon', 'RAC'],
+      strings: ['ryanchacon.io', 'Ryan Andrew Chacon', 'RAC'],
       // strings: ["Ryan Andrew Chacon"],
       typeSpeed: 50,
       backSpeed: 50,
