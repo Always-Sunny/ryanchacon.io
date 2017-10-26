@@ -1,10 +1,13 @@
 import React from 'react';
+import Content from './content';
+
 
 class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'What do you have to say?'
+      value: 'What do you have to say?',
+      content: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -18,7 +21,10 @@ class About extends React.Component {
   handleSubmit(event) {
     alert(this.state.value);
     event.preventDefault();
+    this.setState({content: this.state.value})
+
   }
+
 
   render() {
     return (
@@ -27,6 +33,8 @@ class About extends React.Component {
           <div className="about-content">
             <div className="about-content-container">
               <h1>Content</h1>
+              <Content content={this.state.content} />
+
             </div>
 
           </div>
