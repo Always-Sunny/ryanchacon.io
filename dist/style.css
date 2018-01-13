@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito|Pacifico|Indie+Flower|Roboto|Mukta|Poppins|Raleway|Italiana|Monoton|VT323|Lato|Open+Sans|Crimson+Text|Lora|Manuale|Playfair+Display
+);html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  height: 100%; }
+
+#root {
+  height: 100%; }
+
+.App {
+  height: 100%; }
+
+h1 {
+  margin: 0px;
+  padding: 0px; }
+
+.Header {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100vw;
+  height: 63px;
+  background-color: white; }
+  .Header .Header-Container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    animation: Header 6s ease-in; }
+
+@keyframes Header {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    .Header .Header-Container .header-menu-icon {
+      display: none;
+      opacity: .5; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .Header .Header-Container .header-menu-icon {
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 25px; }
+          .Header .Header-Container .header-menu-icon .menu-icon {
+            max-height: 20px;
+            width: auto; } }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .Header .Header-Container .header-menu-icon {
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 30px; } }
+    .Header .Header-Container .header-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 300px;
+      font-family: "Raleway", sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-right: 50px; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .Header .Header-Container .header-nav {
+          display: none; } }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .Header .Header-Container .header-nav {
+          display: none; } }
+      .Header .Header-Container .header-nav .header-nav-navlink {
+        color: grey;
+        text-decoration: none; }
+      .Header .Header-Container .header-nav .header-nav-navlink-selected {
+        color: black;
+        font-size: 14px;
+        font-weight: bold; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .Header {
+      height: 60px; } }
+
+.Home {
+  height: 100%; }
+  .Home .heading {
+    position: absolute;
+    top: 53%;
+    margin-top: -150px;
+    text-align: center;
+    width: 100%; }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .Home .heading {
+        width: 100%; } }
+    .Home .heading .intro {
+      color: black;
+      font-family: "Italiana", serif;
+      font-size: 100px;
+      font-weight: 400;
+      text-transform: none;
+      white-space: pre; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .Home .heading .intro {
+          font-size: 80px;
+          white-space: normal; } }
+    .Home .heading .tagline {
+      font-size: 16px;
+      animation: 5s fadeIn; }
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        .Home .heading .tagline {
+          font-size: 12px; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.Main {
+  height: 100%;
+  margin-top: 63px; }
+
+/* ==============================================================================================
+Nick Mkrtchyan
+https://www.facebook.com/sonick.pk
+http://www.Mkrtchyan.zz.mu
+================================================================================================= */
+.About {
+  background-color: red; }
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+.stars, .twinkling, .clouds {
+  filter: invert(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+.stars {
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: 0; }
+
+.twinkling {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite; }
+
+.Education {
+  height: 100%;
+  position: fixed;
+  overflow: hidden; }
+  .Education .Education-Container {
+    overflow: auto;
+    background-image: url(); }
+    .Education .Education-Container .imgStyle {
+      width: 100%;
+      margin-top: -100px; }
+
+.Works {
+  height: 100%;
+  position: fixed;
+  overflow: hidden; }
+  .Works .Works-Container {
+    overflow: auto;
+    background-image: url(); }
+    .Works .Works-Container .imgStyle {
+      width: 100%;
+      margin-top: -100px; }
+
+/*# sourceMappingURL=style.css.map*/
