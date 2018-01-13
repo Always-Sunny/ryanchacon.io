@@ -6,7 +6,7 @@ import express from 'express';
 import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
-import webpackConfig from '../client/webpack.config';
+import webpackConfig from '../webpack.config';
 import App from '../client/src/components/App';
 import config from './config';
 import routes from '../client/src/routes';
