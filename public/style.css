@@ -1,7 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito|Pacifico|Indie+Flower|Roboto|Mukta|Poppins|Raleway|Italiana|Monoton|VT323);html, body {
+@import url(https://fonts.googleapis.com/css?family=Nunito|Pacifico|Indie+Flower|Roboto|Mukta|Poppins|Raleway|Italiana|Monoton|VT323|Lato|Open+Sans|Crimson+Text|Lora|Manuale|Playfair+Display
+);html, body {
   margin: 0px;
   padding: 0px;
-  font-family: Avenir;
+  font-family: "Open Sans", sans-serif;
   height: 100%; }
 
 #root {
@@ -114,17 +115,58 @@ h1 {
   height: 100%;
   margin-top: 63px; }
 
-.About {
+/* ==============================================================================================
+Nick Mkrtchyan
+https://www.facebook.com/sonick.pk
+http://www.Mkrtchyan.zz.mu
+================================================================================================= */
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -10000px 5000px; } }
+
+.stars, .twinkling, .clouds {
+  filter: invert(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
   height: 100%;
-  position: fixed; }
-  .About .About-Container {
-    background-image: url(); }
-    .About .About-Container .img-container {
-      height: 250px;
-      width: 250px; }
-      .About .About-Container .img-container .imgStyle {
-        max-height: 250px;
-        max-width: 250px; }
+  display: block; }
+
+.stars {
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: 0; }
+
+.twinkling {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite; }
 
 .Education {
   height: 100%;
