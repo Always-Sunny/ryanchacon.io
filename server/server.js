@@ -38,6 +38,7 @@ server.set('views', path.join(`${__dirname}/../client/views`));
 server.use(express.static(`${__dirname}/../public`));
 
 
+
 server.get('*', (req, res) => {
   res.render('index', {
     content: ReactDOMServer.renderToString(
