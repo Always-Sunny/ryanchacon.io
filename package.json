@@ -12,9 +12,10 @@
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "node_modules/.bin/rimraf ./dist",
     "build:html": "babel-node ./server/buildHtml.js",
-    "prebuild": "npm-run-all clean-dist build:html",
+    "prebuild": "npm-run-all clean-dist copy build:html",
     "build": "babel-node ./server/build.js",
-    "postbuild": "babel-node ./server/distServer.js"
+    "postbuild": "babel-node ./server/distServer.js",
+    "copy": "cp -r ./public/assets ./dist"
   },
   "author": "RC",
   "repository": {
