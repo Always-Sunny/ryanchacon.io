@@ -1,1 +1,1 @@
-web: npm run postbuild
+web: babel-node server/server.js
